@@ -7,59 +7,78 @@
   <style>
     body {
       font-family: sans-serif;
-      max-width: 750px;
+      max-width: 900px;
       margin: 50px auto;
       line-height: 1.6;
       color: #333;
     }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .left {
+      flex: 2;
+      padding-right: 20px;
+    }
+
+    .right img {
+      width: 180px;
+      border-radius: 8px;
+    }
+
     h1, h2 {
       color: #004466;
     }
+
     a {
       color: #0055aa;
       text-decoration: none;
     }
+
     a:hover {
       text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <h1>Yichen YAN</h1>
-  <p><strong>Phone:</strong> +61 0425710295<br>
-     <strong>Email:</strong> lionelyyc@gmail.com or yicyan2@student.unimelb.edu.au<br>
-     <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/yichen-yan-b991a028b" target="_blank">yichen-yan</a><br>
-     <strong>GitHub:</strong> <a href="https://github.com/yiclionel" target="_blank">yiclionel</a></p>
+  <div class="container">
+    <div class="left">
+      <h1>Yichen YAN</h1>
+      <p>
+        <strong>Phone:</strong> +61 0425710295<br>
+        <strong>Email:</strong> lionelyyc@gmail.com or yicyan2@student.unimelb.edu.au<br>
+        <strong>LinkedIn:</strong> 
+        <a href="https://www.linkedin.com/in/yichen-yan-b991a028b" target="_blank">yichen-yan</a><br>
+        <strong>GitHub:</strong> 
+        <a href="https://github.com/yiclionel" target="_blank">yiclionel</a>
+      </p>
 
-  <h2>About Me</h2>
-  <ul>
-    <li>Undergraduate student in Computing and Software Systems at the University of Melbourne (UoM).</li>
-    <li>Interested in AI security and adversarial robustness.</li>
-    <li>Skilled in Python, C, Java, and basic web development.</li>
-    <li>Currently seeking research assistant opportunities.</li>
-  </ul>
+      <h2>About Me</h2>
+      <ul>
+        <li>Undergraduate student in Computing and Software Systems at the University of Melbourne</li>
+        <li>Interested in AI security and adversarial robustness</li>
+        <li>Skilled in Python, Java, and basic web development</li>
+        <li>Currently seeking research assistant opportunities</li>
+      </ul>
 
-  <h2>Projects</h2>
-  <ul>
-    <li><strong>2D Game Development</strong> – Java-based platformer using Bagel library.</li>
-    <li><strong>Designed and implemented a one-dimensional cellular automaton simulator using C.</strong></li>
-    <li><strong>A modular C program developed to parse and process hierarchical data from TSV (Tab-Separated Values) files.</li>
-    <li><strong>Developed a Python-based path detection system to track and analyze the movement of a robot vacuum in a grid-like indoor environment.</li>
-  </ul>
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Hierarchical Report Generator (C)</strong> – Parses and processes hierarchical data from TSV files</li>
+        <li><strong>2D Game Development</strong> – Java-based platformer using Bagel library</li>
+      </ul>
 
-  <h2>Awards</h2>
-  <ul>
-    <li><strong>British Physics Olympiad Senior Challenge Global Gold Award. (2022)</li>
-  </ul>
+      <h2>Education</h2>
+      <ul>
+        <li><em>2024.02 - <strong>present</strong></em>, University of Melbourne, B.Sc. in Computing and Software Systems</li>
+      </ul>
+    </div>
 
-  <section>
-  <h2>Education</h2>
-  <ul>
-    <li><em>2024.02 - <strong>present</strong></em>, the University of Melbourne (UoM), B.Sc. in Computing and Software Systems.</li> 
-    
-  </ul>
-</section>
-
-
+    <div class="right">
+      <img src="profile.jpg" alt="Yichen Yan Photo" />
+    </div>
+  </div>
 </body>
 </html>
