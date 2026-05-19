@@ -1,97 +1,277 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yichen YAN - Homepage</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      max-width: 900px;
-      margin: 50px auto;
-      line-height: 1.6;
-      color: #333;
-    }
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yichen YAN | Computing, AI, and Research</title>
+    <meta
+      name="description"
+      content="Personal academic blog and CV website for Yichen YAN, focused on computing, machine learning, computer vision, and technology research."
+    >
+    <meta property="og:title" content="Yichen YAN | Computing, AI, and Research">
+    <meta property="og:description" content="CV-style personal website and blog for Yichen YAN.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/profile.jpg">
+    <link rel="icon" href="assets/profile.jpg">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="#top">Yichen YAN</a>
+        <div class="nav-links">
+          <a href="#education">Education</a>
+          <a href="#research">Research</a>
+          <a href="#projects">Projects</a>
+          <a href="#blog">Blog</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
 
-    .container {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-    }
+    <main id="top" class="page">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Curriculum Vitae</p>
+          <h1 id="hero-title"><span>Yichen</span> YAN</h1>
+          <p class="subtitle">
+            BSc student in Computing and Software Systems at The University of Melbourne,
+            with interests in artificial intelligence, machine learning, computer vision,
+            UAV-based perception, and technology-sector research.
+          </p>
+          <div class="hero-actions" aria-label="Primary links">
+            <a class="button primary" href="docs/Curriculum_Vitae_for_YichenYAN.pdf">Download CV</a>
+            <a class="button secondary" href="#blog">Read Notes</a>
+          </div>
+        </div>
 
-    .left {
-      flex: 2;
-      padding-right: 20px;
-    }
+        <aside class="profile-card" aria-label="Profile summary">
+          <img src="assets/profile.jpg" alt="Portrait of Yichen YAN">
+          <div>
+            <p>Faculty of Engineering and Information Technology</p>
+            <p>The University of Melbourne</p>
+          </div>
+        </aside>
+      </section>
 
-    .right img {
-      width: 180px;
-      border-radius: 8px;
-    }
+      <section id="contact" class="contact-strip" aria-label="Contact information">
+        <a href="mailto:lionelyyc@gmail.com">lionelyyc@gmail.com</a>
+        <a href="mailto:yicyan2@student.unimelb.edu.au">yicyan2@student.unimelb.edu.au</a>
+        <a href="https://github.com/yicLionel/">GitHub</a>
+        <a href="https://www.linkedin.com/in/yichen-yan-b991a028b/">LinkedIn</a>
+      </section>
 
-    h1, h2 {
-      color: #004466;
-    }
+      <div class="content-grid">
+        <aside class="toc" aria-label="Page sections">
+          <a href="#education">Education</a>
+          <a href="#interests">Research Interests</a>
+          <a href="#research">Research Experience</a>
+          <a href="#projects">Academic Projects</a>
+          <a href="#experience">Professional Experience</a>
+          <a href="#skills">Computer Skills</a>
+          <a href="#blog">Blog</a>
+        </aside>
 
-    a {
-      color: #0055aa;
-      text-decoration: none;
-    }
+        <div class="cv">
+          <section id="education" class="cv-section">
+            <h2>Education</h2>
+            <article class="entry">
+              <time>2024-present</time>
+              <div>
+                <h3>BSc, Computing &amp; Software Systems</h3>
+                <p class="meta">The University of Melbourne · Melbourne, Australia</p>
+                <p>
+                  Coursework includes Machine Learning, Computer Systems, Software Modelling and Design,
+                  Probability for Statistics, Database Systems, and Discrete Maths &amp; Operations Research.
+                </p>
+              </div>
+            </article>
+            <article class="entry">
+              <time>2026</time>
+              <div>
+                <h3>Exchange, Business Intelligence &amp; Data Analytics</h3>
+                <p class="meta">Zhejiang University · Zhejiang, China</p>
+              </div>
+            </article>
+          </section>
 
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="left">
-      <h1>Yichen YAN</h1>
-      <p>
-        <strong>Phone:</strong> +61 0425710295<br>
-        <strong>Email:</strong> lionelyyc@gmail.com or yicyan2@student.unimelb.edu.au<br>
-        <strong>LinkedIn:</strong> 
-        <a href="https://www.linkedin.com/in/yichen-yan-b991a028b" target="_blank">yichen-yan</a><br>
-        <strong>GitHub:</strong> 
-        <a href="https://github.com/yiclionel" target="_blank">yiclionel</a>
-      </p>
+          <section id="interests" class="cv-section">
+            <h2>Research Interests</h2>
+            <p class="interest-line">
+              Artificial Intelligence; Machine Learning; Computer Vision; UAV-based Perception;
+              Object Tracking; Transfer Learning; Robotics Perception.
+            </p>
+          </section>
 
-      <h2>About Me</h2>
-      <ul>
-        <li>2nd year B.Sc in Computing and Software Systems at the University of Melbourne (UoM).</li>
-        <li>Interested in AI security and adversarial robustness.</li>
-        <li>Skilled in Python, Java, and basic web development.</li>
-        <li>Currently seeking research assistant opportunities.</li>
-      </ul>
+          <section id="research" class="cv-section">
+            <h2>Research Experience</h2>
+            <article class="entry">
+              <time>2023</time>
+              <div>
+                <h3>
+                  Robustness and Real-time Improvement for Vehicle Tracking by UAV based on
+                  CamShift Algorithm with HSV Components
+                </h3>
+                <ul>
+                  <li>Prepared an unpublished manuscript on vehicle tracking from UAV-mounted cameras.</li>
+                  <li>Investigated CamShift, MeanShift, HSV colour components, search windows, and two-dimensional histograms.</li>
+                  <li>Explored methods to improve tracking robustness and real-time performance under complex urban backgrounds.</li>
+                  <li>Built early research experience in computer vision, UAV-based perception, object tracking, literature review, and academic writing.</li>
+                </ul>
+                <p class="advisor">
+                  Advisor: <strong>Dr. Peng Lu</strong>, Assistant Professor, Department of Mechanical &amp; Engineering,
+                  The University of Hong Kong.
+                  <a href="docs/UAV_paper.pdf">Read research PDF</a>
+                </p>
+              </div>
+            </article>
+          </section>
 
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>2D Game Development</strong> – Java-based platformer using Bagel library.</li>
-        <li><strong>Designed and implemented a one-dimensional cellular automaton simulator using C.</strong></li>
-        <li><strong>A modular C program developed to parse and process hierarchical data from TSV (Tab-Separated Values) files.</strong></li>
-        <li><strong>Developed a Python-based path detection system to track and analyze the movement of a robot vacuum in a grid-like indoor environment.</strong></li>
-      </ul>
+          <section id="projects" class="cv-section">
+            <h2>Academic Projects</h2>
+            <article class="entry">
+              <time>2026</time>
+              <div>
+                <h3>Image Classification with Transfer Learning and Classical Machine Learning Models</h3>
+                <p class="meta">The University of Melbourne · COMP30027 Machine Learning Project</p>
+                <ul>
+                  <li>Developed a machine learning pipeline for coarse-grained animal classification and fine-grained bird species classification.</li>
+                  <li>Compared colour histograms, HOG descriptors, low-level image statistics, and ImageNet-pretrained CNN embeddings.</li>
+                  <li>Used ResNet and EfficientNet variants as fixed feature extractors for high-dimensional learned representations.</li>
+                  <li>Evaluated Logistic Regression, Linear SVM, RBF SVM, KNN, Gaussian Naive Bayes, Random Forest, and Extra Trees.</li>
+                  <li>Reached 97.3% validation accuracy on coarse-grained classification and 97.6% on fine-grained bird species classification.</li>
+                </ul>
+              </div>
+            </article>
 
-      <h2>Research</h2>
-      <ul>
-        <li><strong>Robustness and Real-time Improvement for Vehicle Tracking by UAV based on CamShift Algorithm with Hue, Saturation, Value Components</strong> - supervised by 
-          <a href="https://mech.hku.hk/academic-staff/lu-p" target="_blank">Prof. Peng Lu</a> at The University of Hong Kong (HKU).</li>
-      </ul>
-      
-      <h2>Awards</h2>
-      <ul>
-        <li><strong>British Physics Olympiad Senior Challenge Global Gold (2022).</strong></li>
-      </ul>
-      
-      <h2>Education</h2>
-      <ul>
-        <li><em>2024.02 - <strong>present</strong></em>, University of Melbourne (UoM), B.Sc. in Computing and Software Systems.</li>
-      </ul>
-    </div>
+            <article class="entry">
+              <time>2026</time>
+              <div>
+                <h3>Financial Asset Trend Analysis and Watchlist Monitoring Platform</h3>
+                <p class="meta">Independent Vibe-Coding Development Project</p>
+                <ul>
+                  <li>Developed an investment research platform for Chinese stocks and mutual funds using AI-assisted coding tools.</li>
+                  <li>Implemented moving averages, RSI, MACD, and Bollinger Bands for trend analysis.</li>
+                  <li>Designed rolling backtesting for 5-, 20-, and 60-trading-day win rates, returns, excess returns, and drawdowns.</li>
+                  <li>Built a PostgreSQL-cached market scanning and ranking engine for explainable trend-strength rankings.</li>
+                </ul>
+              </div>
+            </article>
+          </section>
 
-    <div class="right">
-      <img src="assets/IMG_5349.jpg" alt="" />
-    </div>
-  </div>
-</body>
+          <section id="experience" class="cv-section">
+            <h2>Professional Experience</h2>
+            <article class="entry">
+              <time>Jan 2026-Apr 2026</time>
+              <div>
+                <h3>Internet Sector Analyst Intern</h3>
+                <p class="meta">Huatai Securities · Shanghai, China</p>
+                <ul>
+                  <li>Benchmarked AI agents and video-generation models across reasoning, instruction following, multimodal capability, content quality, and commercial applicability.</li>
+                  <li>Built scoring frameworks that translate qualitative AI model outputs into structured analyst-ready comparisons.</li>
+                  <li>Synthesised AI product trends, model capabilities, and competitive positioning into research materials.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="entry">
+              <time>Jul 2025-Jan 2026</time>
+              <div>
+                <h3>Financial Advisory Intern</h3>
+                <p class="meta">Meritco Services · Shanghai, China</p>
+                <ul>
+                  <li>Supported deal sourcing and pre-investment due diligence across AI, embodied-intelligence, robotics, and consumer technology startups.</li>
+                  <li>Prepared business plans and financing materials covering technical roadmaps, market size, positioning, revenue models, competition, and investment highlights.</li>
+                  <li>Assisted investor communication workflows, including meeting preparation, minutes, feedback tracking, and follow-up materials.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="entry">
+              <time>Jun 2024-Oct 2024</time>
+              <div>
+                <h3>Equity Research Analyst Intern</h3>
+                <p class="meta">Sealand Securities · Shanghai, China</p>
+                <ul>
+                  <li>Tracked industry data, company announcements, and supply-chain developments in electronics, semiconductors, and AI-related sectors.</li>
+                  <li>Prepared structured research materials on business models, revenue structures, customer bases, industry cycles, growth drivers, and risks.</li>
+                </ul>
+              </div>
+            </article>
+          </section>
+
+          <section class="cv-section">
+            <h2>Academic Achievements &amp; Recognitions</h2>
+            <article class="entry compact">
+              <time>2022</time>
+              <div>
+                <p><strong>Global Gold Award</strong>, British Physics Olympiad</p>
+                <p><strong>Regional Top Individual and Group Award</strong>, National Economics Challenge</p>
+              </div>
+            </article>
+          </section>
+
+          <section id="skills" class="cv-section">
+            <h2>Computer Skills</h2>
+            <div class="skill-list">
+              <p><strong>Programming Languages</strong><span>Python, Java, C, SQL/MySQL, R, Matlab</span></p>
+              <p><strong>Machine Learning</strong><span>Image classification, transfer learning, feature extraction, model evaluation, Logistic Regression, SVM, KNN, Naive Bayes, Random Forest, Extra Trees, scikit-learn</span></p>
+              <p><strong>Software and Tools</strong><span>Git, Jupyter Notebook, LaTeX, basic Linux command line, PowerPoint, Wind, Choice</span></p>
+              <p><strong>AI Tools</strong><span>ChatGPT, Claude, Codex, Qwen, prompt design, AI model benchmarking, research synthesis</span></p>
+            </div>
+          </section>
+
+          <section class="cv-section">
+            <h2>Leadership and Activities</h2>
+            <article class="entry">
+              <time>Jun 2024-Jul 2025</time>
+              <div>
+                <h3>Secretary, Organisation Department</h3>
+                <p class="meta">Chinese Students Association, The University of Melbourne · Melbourne, Australia</p>
+                <ul>
+                  <li>Coordinated inter-university and campus events with 50-300+ attendees.</li>
+                  <li>Managed meeting logistics, internal communications, and cross-team workflows for the student committee.</li>
+                  <li>Recognised as an Outstanding Student Leader by the association.</li>
+                </ul>
+              </div>
+            </article>
+          </section>
+
+          <section id="blog" class="cv-section blog-section">
+            <h2>Blog Notes</h2>
+            <div class="blog-grid">
+              <article class="post-card">
+                <p class="post-kicker">Machine Learning</p>
+                <h3><a href="blog/transfer-learning.html">Transfer Learning as a Practical Baseline</a></h3>
+                <p>
+                  Notes on combining HOG, low-level visual statistics, and pretrained CNN embeddings
+                  before moving to heavier fine-tuning workflows.
+                </p>
+              </article>
+              <article class="post-card">
+                <p class="post-kicker">Computer Vision</p>
+                <h3><a href="blog/uav-tracking.html">Tracking Vehicles from UAV Footage</a></h3>
+                <p>
+                  A research log on CamShift, MeanShift, HSV histograms, and robustness issues in
+                  urban aerial scenes.
+                </p>
+              </article>
+              <article class="post-card">
+                <p class="post-kicker">Technology Research</p>
+                <h3><a href="blog/ai-model-evaluation.html">From AI Model Output to Analyst Framework</a></h3>
+                <p>
+                  A practical outline for evaluating AI agents and video-generation models across
+                  capability, quality, and commercial relevance.
+                </p>
+              </article>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 Yichen YAN. Built as a CV-style personal blog for GitHub Pages.</p>
+    </footer>
+  </body>
 </html>

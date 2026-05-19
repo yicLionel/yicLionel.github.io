@@ -1,0 +1,10 @@
+{
+  "name": "yichen-yan-personal-blog",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "python3 -m http.server 3001 --bind 127.0.0.1",
+    "build": "echo \"Static site: no build step required\"",
+    "start": "python3 -m http.server 3001 --bind 127.0.0.1"
+  }
+}
